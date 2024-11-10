@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sour Gummy";
+}
+
+body {
+    cursor: url(https://www.onyedika.xyz/static/media/arrowPoint.5b3f3b5c07736388f143.svg) 15 15, move;
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1593012370132-c4390ff79e92?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fHw%3D);
+    backdrop-filter: blur(50px);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Navbar Start */
+
+
+.navbar {
+    /* background-color: black; */
+    height: 85px;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbarlist {
+    margin-top: 15px;
+}
+
+
+.navbarlist ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 1.2rem;
+}
+.navbar h3:hover{
+    color: black;
+}
+
+.navbar h3{
+    text-shadow: 4px 4px black;
+    text-shadow: 4px 9px 5px black;
+}
+
+.navbarlist ul a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* Navbar End */
+
+
+/* header section 2 */
+
+.myrow {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.mytext-uppercase {
+    background: rgba(76, 175, 80, 0.6);
+    width: 280px;
+    border-radius: 12px;
+    font-weight: bolder;
+    color: black;
+}
+
+.myspan {
+    font-size: 2rem;
+    color: black;
+    font-weight: bolder;
+}
+
+.myparagh {
+    font-size: 1.2rem;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+.mypicture{
+    height: 280px; 
+    margin-left: 30px;
+}
+
+.secondimage{
+    /* background-color: blue; */
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.secondimage img{
+     height: 280px;
+} 
+
+@media only screen and (max-width: 768px) {
+    .myrow {
+        margin-left: 0;
+        margin-top: 100px;
+    }
+    .mypicture{
+        height: 280px; 
+        margin-left: 0px;
+    }
+    .secondimage img{
+        height: 130px;
+    }
+}
+
+/* header section 2 */
