@@ -125,3 +125,48 @@ body {
 }
 
 /* header section 2 End*/
+
+
+/* Main Start */
+
+.tools{
+    background-color: rgb(46, 43, 43);
+    color: green;
+    height: 80vh;
+    width: 100%;
+    text-align: center;
+    place-content: center;
+}
+
+
+
+.tools h1{
+    border: 2px solid forestgreen;
+    background-color: black;
+    padding: 10px;
+    width: 200px;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.toolnames{
+    background-color: forestgreen;
+    color: white;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+.toolnames h1{
+    background-color: black;
+    border: 2px solid forestgreen;
+    width: 220px; 
+    padding: 10px;
+    border-radius: 15px;
+    margin: 20px;
+}
