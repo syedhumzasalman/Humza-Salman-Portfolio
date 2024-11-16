@@ -45,19 +45,20 @@ body {
     gap: 30px;
     font-size: 1.2rem;
 }
-.navbar h3:hover{
-    color: rgb(8, 8, 8);
-}
-
-.navbar h3{
-    text-shadow: 4px 4px black;
-    text-shadow: 4px 9px 5px black;
-}
 
 .navbarlist ul a {
     text-decoration: none;
     color: white;
 }
+
+.navbar h3{
+    text-shadow: 5px 5px black;
+    text-shadow: 5px 5px 20px black;
+}
+.navbar h3:hover{
+    color: rgb(8, 8, 8);
+}
+
 
 
 
@@ -75,12 +76,28 @@ body {
     margin-left: 100px;
 }
 
+
+/* Text h5 */
+
+.typing {
+    width: 473px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    animation: typing 2s steps(12, end), cursor .2s steps(12, end) infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+}
+@keyframes cursor {
+    50% { border-color: transparent }
+}
+
 .mytext-uppercase {
-    background: rgba(76, 175, 80, 0.6);
-    width: 280px;
-    border-radius: 12px;
+    width: 260px;
     font-weight: bolder;
     color: black;
+    transition: all 3s;
 }
 
 .myspan {
@@ -110,6 +127,191 @@ body {
      height: 280px;
 } 
 
+
+
+/* header section 2 End*/
+
+
+/* Main Start section one*/
+
+.tools{
+    background-color: #050810;
+    color: #14e956;
+    height: 80vh;
+    width: 100%;
+    text-align: center;
+    place-content: center;
+}
+
+
+
+.tools h1{
+    border: 2px solid #14e956;
+    background-color: #12141d !important;
+    padding: 10px;
+    width: 200px;
+    border-radius: 15px;
+    margin: auto;
+    box-shadow: 5px 5px 20px rgb(95, 141, 95);
+    transition: all 1s;
+}
+
+.tools h1:hover{
+    color: #14e956;
+    transform: scale(1.2);
+    box-shadow: 5px 5px 100px rgb(95, 141, 95);
+}
+.toolnames{
+    background-color: #0c8c34;
+    color: white;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+.toolnames h2{
+    background-color: #12141d;
+    border: 2px solid 7695FF;
+    width: 220px; 
+    padding: 10px;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 5px 5px 20px rgb(21, 22, 21);
+    transition: all 1s;
+}
+
+.tools h2:hover{
+    color: #14e956;
+    transform: scale(1.2);
+    box-shadow: 5px 5px 100px rgb(21, 22, 21);
+}
+
+
+/* Main Start section one*/
+
+
+
+/* Main Start section two*/
+
+.tools{
+    background-color: #050810;
+    color: #14e956;
+    height: 80vh;
+    width: 100%;
+    text-align: center;
+    place-content: center;
+}
+
+.assignment h1{
+    border: 2px solid #14e956;
+    background-color: #12141d !important;
+    color: #14e956;
+    text-align: center;
+    padding: 10px;
+    width: 250px;
+    border-radius: 15px;
+    margin: auto;
+    box-shadow: 5px 5px 20px rgb(95, 141, 95);
+    transition: all 1s;
+}
+
+.tools h1:hover{
+    color: #14e956;
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section one text & para */
 @media only screen and (max-width: 768px) {
     .myrow {
         margin-left: 0;
@@ -122,51 +324,4 @@ body {
     .secondimage img{
         height: 130px;
     }
-}
-
-/* header section 2 End*/
-
-
-/* Main Start */
-
-.tools{
-    background-color: rgb(46, 43, 43);
-    color: green;
-    height: 80vh;
-    width: 100%;
-    text-align: center;
-    place-content: center;
-}
-
-
-
-.tools h1{
-    border: 2px solid forestgreen;
-    background-color: black;
-    padding: 10px;
-    width: 200px;
-    border-radius: 15px;
-    margin: auto;
-}
-
-.toolnames{
-    background-color: forestgreen;
-    color: white;
-    height: 100%;
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    margin-top: 50px;
-    flex-wrap: wrap;
-    border-radius: 10px;
-}
-.toolnames h1{
-    background-color: black;
-    border: 2px solid forestgreen;
-    width: 220px; 
-    padding: 10px;
-    border-radius: 15px;
-    margin: 20px;
 }
