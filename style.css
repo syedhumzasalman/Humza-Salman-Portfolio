@@ -51,11 +51,12 @@ body {
     color: white;
 }
 
-.navbar h3{
+.navbar h3 {
     text-shadow: 5px 5px black;
     text-shadow: 5px 5px 20px black;
 }
-.navbar h3:hover{
+
+.navbar h3:hover {
     color: rgb(8, 8, 8);
 }
 
@@ -86,11 +87,17 @@ body {
     border-right: 2px solid black;
     animation: typing 2s steps(12, end), cursor .2s steps(12, end) infinite;
 }
+
 @keyframes typing {
-    from { width: 0 }
+    from {
+        width: 0
+    }
 }
+
 @keyframes cursor {
-    50% { border-color: transparent }
+    50% {
+        border-color: transparent
+    }
 }
 
 .mytext-uppercase {
@@ -111,21 +118,23 @@ body {
     color: whitesmoke;
     font-weight: bolder;
 }
-.mypicture{
-    height: 280px; 
+
+.mypicture {
+    height: 280px;
     margin-left: 30px;
 }
 
-.secondimage{
+.secondimage {
     /* background-color: blue; */
-    height: 100%; 
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.secondimage img{
-     height: 280px;
-} 
+
+.secondimage img {
+    height: 280px;
+}
 
 
 
@@ -134,7 +143,7 @@ body {
 
 /* Main Start section one*/
 
-.tools{
+.tools {
     background-color: #050810;
     color: #14e956;
     height: 80vh;
@@ -145,7 +154,7 @@ body {
 
 
 
-.tools h1{
+.tools h1 {
     border: 2px solid #14e956;
     background-color: #12141d !important;
     padding: 10px;
@@ -156,12 +165,13 @@ body {
     transition: all 1s;
 }
 
-.tools h1:hover{
+.tools h1:hover {
     color: #14e956;
     transform: scale(1.2);
     box-shadow: 5px 5px 100px rgb(95, 141, 95);
 }
-.toolnames{
+
+.toolnames {
     background-color: #0c8c34;
     color: white;
     height: 100%;
@@ -174,10 +184,11 @@ body {
     flex-wrap: wrap;
     border-radius: 10px;
 }
-.toolnames h2{
+
+.toolnames h2 {
     background-color: #12141d;
     border: 2px solid 7695FF;
-    width: 220px; 
+    width: 220px;
     padding: 10px;
     border-radius: 15px;
     margin: 20px;
@@ -185,7 +196,7 @@ body {
     transition: all 1s;
 }
 
-.tools h2:hover{
+.tools h2:hover {
     color: #14e956;
     transform: scale(1.2);
     box-shadow: 5px 5px 100px rgb(21, 22, 21);
@@ -198,16 +209,16 @@ body {
 
 /* Main Start section two*/
 
-.tools{
+.assignment {
     background-color: #050810;
     color: #14e956;
-    height: 80vh;
+    height: 20vh;
     width: 100%;
     text-align: center;
     place-content: center;
 }
 
-.assignment h1{
+.assignment h1 {
     border: 2px solid #14e956;
     background-color: #12141d !important;
     color: #14e956;
@@ -220,21 +231,35 @@ body {
     transition: all 1s;
 }
 
-.tools h1:hover{
+.assignment h1:hover {
     color: #14e956;
     transform: scale(1.2);
+    box-shadow: 5px 5px 100px rgb(95, 141, 95);
 }
 
 
+/* Main Start section two*/
 
 
 
 
 
 
+/* main section 3 */
 
 
+#my-carousel-container {
+    height: 100vh;
+    width: 100%;
+}
 
+
+#my-card {
+    margin: auto;
+    width:  60%;
+    border: 4px solid black;
+    border-radius: 10px;
+}
 
 
 
@@ -317,11 +342,13 @@ body {
         margin-left: 0;
         margin-top: 100px;
     }
-    .mypicture{
-        height: 280px; 
+
+    .mypicture {
+        height: 280px;
         margin-left: 0px;
     }
-    .secondimage img{
+
+    .secondimage img {
         height: 130px;
     }
 }
