@@ -14,7 +14,7 @@ body {
 .header {
     height: 100%;
     width: 100%;
-    background-image: url(https://images.unsplash.com/photo-1593012370132-c4390ff79e92?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fHw%3D);
+    background-image: linear-gradient(to right, rgb(40, 37, 37) , rgb(13, 13, 11));
     backdrop-filter: blur(50px);
     background-size: cover;
     background-repeat: no-repeat;
@@ -24,10 +24,10 @@ body {
 
 
 .navbar {
-    /* background-color: black; */
+    background-color: #10e956;
     height: 85px;
     width: 100%;
-    color: white;
+    color: black;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -48,7 +48,7 @@ body {
 
 .navbarlist ul a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .navbar h3 {
@@ -57,10 +57,12 @@ body {
 }
 
 .navbar h3:hover {
-    color: rgb(8, 8, 8);
+    color: white;
 }
 
-
+.navbarlist ul a:hover{
+   color: white;
+}
 
 
 /* Navbar End */
@@ -103,13 +105,13 @@ body {
 .mytext-uppercase {
     width: 260px;
     font-weight: bolder;
-    color: black;
+    color: #10e956;
     transition: all 3s;
 }
 
 .myspan {
     font-size: 2rem;
-    color: black;
+    color: #10e956;
     font-weight: bolder;
 }
 
@@ -245,7 +247,7 @@ body {
 
 
 
-/* main section 3 */
+/* main section carousel 3 */
 
 
 #my-carousel-container {
@@ -261,6 +263,15 @@ body {
     border-radius: 10px;
 }
 
+#my-small-card {
+    margin: auto;
+    width:  60%;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+
+
+/* main section carousel 3 */
 
 
 
@@ -351,4 +362,20 @@ body {
     .secondimage img {
         height: 130px;
     }
+}
+
+/* Carousel main sections */
+
+@media screen and (max-width: 750px) {
+    .section-above750{
+        display: none;
+    }
+    
+    
+}
+@media screen and (min-width: 750px) {
+    .section-after750{
+        display: none;
+    }
+    
 }
