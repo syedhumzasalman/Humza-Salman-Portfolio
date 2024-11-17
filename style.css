@@ -44,6 +44,7 @@ body {
     display: flex;
     gap: 30px;
     font-size: 1.2rem;
+    margin-right: 5px;
 }
 
 .navbarlist ul a {
@@ -52,8 +53,9 @@ body {
 }
 
 .navbar h3 {
-    text-shadow: 5px 5px black;
-    text-shadow: 5px 5px 20px black;
+    /* text-shadow: 5px 5px black; */
+    /* text-shadow: 5px 5px 20px black; */
+    margin-left: 6px;
 }
 
 .navbar h3:hover {
