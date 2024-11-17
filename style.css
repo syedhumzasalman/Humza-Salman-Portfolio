@@ -281,10 +281,9 @@ body {
 .assignment-details{
     background-color: #050810;
     color: #14e956;
-    height: 20vh;
+    height: 10vh;
     width: 100%;
     text-align: center;
-    place-content: center;
 }
 
 .assignment-details button{
