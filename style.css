@@ -210,7 +210,6 @@ body {
 /* Main Start section one*/
 
 
-
 /* Main Start section two*/
 
 .assignment {
@@ -277,7 +276,36 @@ body {
 
 
 
+/* all assignment details*/
 
+.assignment-details{
+    background-color: #050810;
+    color: #14e956;
+    height: 20vh;
+    width: 100%;
+    text-align: center;
+    place-content: center;
+}
+
+.assignment-details button{
+    border: 2px solid #14e956;
+    background-color: #12141d !important;
+    color: #14e956;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin: auto;
+    transition: all 1s;
+}
+
+.assignment-details button:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+/* all assignment details*/
 
 
 
