@@ -289,7 +289,6 @@ body {
 .assignment-details button{
     border: 2px solid #14e956;
     background-color: #12141d !important;
-    color: #14e956;
     text-align: center;
     padding: 10px;
     border-radius: 5px;
@@ -299,6 +298,12 @@ body {
 
 .assignment-details button:hover{
     transform: scale(1.2);
+}
+
+.assignment-details a{
+    text-decoration: none !important;
+    color: #14e956;
+
 }
 
 
