@@ -1,0 +1,233 @@
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sour Gummy";
+}
+
+body {
+    cursor: url(https://www.onyedika.xyz/static/media/arrowPoint.5b3f3b5c07736388f143.svg) 15 15, move;
+    height: 100%;
+    width: 100%;
+    background-color: #050810;
+}
+
+/* Navbar Start */
+
+
+.navbar {
+    background-color: #10e956;
+    height: 100%;
+    width: 100%;
+    color: black;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar h3 {
+    font-size: 2rem !important;
+    font-weight: bold !important;
+    margin-top: .8rem !important;
+}
+
+.navbarlist {
+    margin-top: 1.5rem;
+}
+
+
+.navbarlist ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 1.3rem;
+}
+
+.navbarlist ul a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.navbar h3:hover {
+    color: white;
+}
+
+.navbarlist ul a:hover{
+   color: white;
+}
+
+
+/* Navbar End */
+
+
+
+
+
+
+.menu__container {
+  width: 400px;
+  height: 230px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20vh;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 10px 40px 2px rgba(0,0,0,0.4);
+  background: #000;
+  transform-origin: center center 0px;
+  transition: all 0.5s ease-out;
+  animation-name: animate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform: perspective(1000px) rotateX(35deg) rotateY(4deg) rotateZ(-30deg);
+  z-index: 1;
+}
+.menu__container:hover {
+  animation: unset;
+  margin-top: 18vh;
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+.menu__container .menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100%;
+  height: 100%;
+  color: #fff;
+}
+/* @-moz-keyframes animate {
+  0% {
+    margin-top: 20vh;
+  }
+  50% {
+    margin-top: 18vh;
+  }
+  100% {
+    margin-top: 20vh;
+  }
+}
+@-webkit-keyframes animate {
+  0% {
+    margin-top: 20vh;
+  }
+  50% {
+    margin-top: 18vh;
+  }
+  100% {
+    margin-top: 20vh;
+  }
+}
+@-o-keyframes animate {
+  0% {
+    margin-top: 20vh;
+  }
+  50% {
+    margin-top: 18vh;
+  }
+  100% {
+    margin-top: 20vh;
+  }
+} */
+@keyframes animate {
+  0% {
+    margin-top: 20vh;
+  }
+  50% {
+    margin-top: 18vh;
+  }
+  100% {
+    margin-top: 20vh;
+  }
+}
+
+
+/* heading */
+
+.heading{
+    background-color: #000;
+    color: #14e956;
+    padding: 10px;
+   font-size: 2rem;
+   border: 4px solid #14e956;
+   box-shadow: 8px 8px 2px #14e956;
+}
+
+.my-btn a{
+    text-decoration: none !important;
+    color: #14e956 !important;
+}
+
+.my-btn{
+    background-color: rgba(0,0,0,.9) !important;
+    color: #14e956 !important;
+    position: 10px;
+   font-size: 2rem;
+   border: 4px solid #14e956;
+   box-shadow: 8px 8px 1px #14e956;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+    .second{
+        flex-direction: column-reverse;
+    }
+    
+}
+
+
+
+
+
+@media only screen and (max-width: 500px){
+    .menu__container {
+        width: 300px;
+        height: 200px;
+    }
+
+    .navbar > .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .all-assignment{
+        font-size: 2.4rem !important;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .menu__container {
+        width: 250px;
+        height: 180px;
+    }
+}
+
+
