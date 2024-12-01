@@ -1,0 +1,81 @@
+*{
+    font-family: "Source Code Pro", monospace;
+}
+
+/* navigation bar */
+
+.navbar{
+    background-color: white;
+}
+
+.nav-link:hover{
+    color: blue !important;
+    transform: scale(1.1) !important;
+}
+
+/* navigation bar */
+
+/* chat box */
+.chat{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+.chat > button{
+    background-color: white;
+}
+.chat > span{
+    color: rgb(255, 255, 255);
+    background-color: #7843e9;
+}
+/* chat box */
+
+
+/* social media links */
+
+.links{
+    padding: 5px !important;
+    top: 150px;
+}
+
+
+.links-2>.social-icons{
+    color: black;
+}
+
+.social-icons{
+    color: black;
+    margin: 0px !important;
+    padding: 8px;
+}
+
+.social-icons:hover{
+    color: blue;
+    transform: scale(1.2) !important;
+}
+
+/* social media links */
+
+/* header section */
+
+.my-col{
+    height: 90vh;
+}
+
+.my-col a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold
+}
+
+.my-col button{
+    background-color: #7843e9;
+    padding: 10px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+/* header section */

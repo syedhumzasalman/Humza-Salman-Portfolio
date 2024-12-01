@@ -1,0 +1,23 @@
+@media only screen and (max-width: 576px){
+    .links{
+        display: none !important;
+    }
+
+    .my-col{
+        width: 100% !important;
+    }
+    
+    .chat{
+        position: fixed;
+        bottom: 10px;
+        right: 50px;
+    }
+}
+
+
+
+@media only screen and (min-width: 576px){
+    .links-2{
+        display: none !important;
+    }
+}
