@@ -5,7 +5,9 @@
 /* navigation bar */
 
 .navbar{
-    background-color: white;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000000;
+    
 }
 
 .nav-link:hover{
@@ -13,6 +15,13 @@
     transform: scale(1.1) !important;
 }
 
+header{
+    background-image: url(https://img.freepik.com/free-photo/cyber-security-expert-working-with-technology-neon-lights_23-2151645607.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-position: center; 
+   filter: grayscale(40%) !important;
+}
 /* navigation bar */
 
 /* chat box */
@@ -41,13 +50,16 @@
 
 
 .links-2>.social-icons{
-    color: black;
+    color: white;
+    background-color: none;
 }
 
 .social-icons{
-    color: black;
+    background-color: rgba(0,0,0,1);
+    color: white;
     margin: 0px !important;
     padding: 8px;
+    border-radius: 10px;
 }
 
 .social-icons:hover{
