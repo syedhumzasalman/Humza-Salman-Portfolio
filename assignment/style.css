@@ -4,69 +4,71 @@
   padding: 0;
   margin: 0;
 }
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Sour Gummy";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sour Gummy";
 }
 
-:root{
+:root {
   --bs-color-primary: black;
 }
 
 body {
-    cursor: url(https://www.onyedika.xyz/static/media/arrowPoint.5b3f3b5c07736388f143.svg) 15 15, move;
-    height: 100%;
-    width: 100%;
-    background-color: white;
+  cursor: url(https://www.onyedika.xyz/static/media/arrowPoint.5b3f3b5c07736388f143.svg) 15 15, move;
+  height: 100%;
+  width: 100%;
+  background-color: white;
 }
 
 /* Navbar Start */
 
 
 .navbar {
-    background-color: white;
-    height: 100%;
-    width: 100%;
-    color: black;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center;
-    flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  color: black;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .navbar h3 {
-    font-size: 2rem !important;
-    font-weight: bold !important;
-    margin-top: .8rem !important;
+  font-size: 2rem !important;
+  font-weight: bold !important;
+  margin-top: .8rem !important;
 }
 
 .navbarlist {
-    margin-top: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 
 .navbarlist ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    font-size: 1.3rem;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-size: 1.3rem;
 }
 
 .navbarlist ul a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: white;
 }
 
 
 .navbar h3:hover {
-    color: black;
+  color: black;
 }
 
-.navbarlist ul a:hover{
+.navbarlist ul a:hover {
   transform: scale(1.3);
-   color: black;
+  color: black;
 }
 
 
@@ -86,7 +88,7 @@ body {
   margin-bottom: 50px;
   border-radius: 20px;
   cursor: pointer;
-  box-shadow: 0 10px 40px 2px rgba(0,0,0,0.4);
+  box-shadow: 0 10px 40px 2px rgba(0, 0, 0, 0.4);
   background: #000;
   transform-origin: center center 0px;
   transition: all 0.5s ease-out;
@@ -96,11 +98,13 @@ body {
   transform: perspective(1000px) rotateX(35deg) rotateY(4deg) rotateZ(-30deg);
   z-index: 1;
 }
+
 .menu__container:hover {
   animation: unset;
   margin-top: 18vh;
   transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
 }
+
 .menu__container .menu {
   display: flex;
   justify-content: space-around;
@@ -109,6 +113,7 @@ body {
   height: 100%;
   color: #fff;
 }
+
 /* @-moz-keyframes animate {
   0% {
     margin-top: 20vh;
@@ -157,30 +162,30 @@ body {
 
 /* heading */
 
-.heading{
-    background-color: #000;
-    color: white;
-    padding: 10px;
-   font-size: 2rem;
-   border: 4px solid rgba(0,0,0,.6);
-   box-shadow: 8px 8px 2px rgba(0,0,0,.6);
+.heading {
+  background-color: #7843e9;
+  color: white;
+  padding: 10px;
+  font-size: 2rem;
+  border: 4px solid #7843e9;
+  box-shadow: 8px 8px 2px rgba(0, 0, 0, .6);
 }
 
-.my-btn a{
-    text-decoration: none !important;
-    color: white !important;
+.my-btn a {
+  text-decoration: none !important;
+  color: white !important;
 }
 
-.my-btn{
-    background-color: black !important;
-    color: white !important;
-    position: 10px;
-    font-size: 1.2rem;
-    border: 4px solid rgba(0,0,0,.6);
-    box-shadow: 6px 6px 1px rgba(0,0,0,.6);
+.my-btn {
+  background-color: #7843e9 !important;
+  color: white !important;
+  position: 10px;
+  font-size: 1.2rem;
+  border: 4px solid #7843e9;
+  box-shadow: 6px 6px 1px rgba(0, 0, 0, .6);
 }
 
-.all-assignment{
+.all-assignment {
   font-size: 2.5rem;
   font-weight: bold;
 }
@@ -205,42 +210,41 @@ body {
 
 
 
-@media only screen and (max-width: 768px){
-    .second{
-        flex-direction: column-reverse;
-    }
-    .first{
-        flex-direction: column;
-    }
-    
+@media only screen and (max-width: 768px) {
+  .second {
+    flex-direction: column-reverse;
+  }
+
+  .first {
+    flex-direction: column;
+  }
+
 }
 
 
 
 
 
-@media only screen and (max-width: 500px){
-    .menu__container {
-        width: 300px;
-        height: 200px;
-    }
+@media only screen and (max-width: 500px) {
+  .menu__container {
+    width: 300px;
+    height: 200px;
+  }
 
-    .navbar > .container{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .navbar>.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .all-assignment{
-        font-size: 1.8rem !important;
-    }
+  .all-assignment {
+    font-size: 1.8rem !important;
+  }
 }
 
-@media only screen and (max-width: 320px){
-    .menu__container {
-        width: 250px;
-        height: 180px;
-    }
+@media only screen and (max-width: 320px) {
+  .menu__container {
+    width: 250px;
+    height: 180px;
+  }
 }
-
-
