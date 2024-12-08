@@ -4,14 +4,19 @@
 
 /* navigation bar */
 
+.my-icon{
+   font-size: rem;
+}
+
 .navbar{
     background-color: rgba(0,0,0,0.5);
-    z-index: 1000000;
-    
+    z-index: 5;
 }
 
 .nav-link:hover{
-    color: blue !important;
+    background-color: #7843e9;
+    border-radius: 5px;
+    color: black !important;
     transform: scale(1.1) !important;
 }
 
@@ -19,8 +24,12 @@ header{
     background-image: url(https://img.freepik.com/free-photo/cyber-security-expert-working-with-technology-neon-lights_23-2151645607.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-   background-position: center; 
-   filter: grayscale(40%) !important;
+   background-position: center;
+}
+
+
+.myheader{
+ background-image: linear-gradient(65.99deg, #000 0, transparent 99.04%);
 }
 /* navigation bar */
 
@@ -55,15 +64,13 @@ header{
 }
 
 .social-icons{
-    background-color: rgba(0,0,0,1);
-    color: white;
+    color: #7843e9;
     margin: 0px !important;
     padding: 8px;
-    border-radius: 10px;
 }
 
 .social-icons:hover{
-    color: blue;
+    color: #7843e9;
     transform: scale(1.2) !important;
 }
 
@@ -91,3 +98,41 @@ header{
 }
 
 /* header section */
+
+
+.about-section{
+    background-color: #fafafa !important;
+}
+
+.skils-section{
+    background-color: #fafafa !important;
+}
+.my-btn{
+    background-color: #7843e9;
+    padding: 5px;
+    width: 120px;
+    border-radius: 5px;
+    border: none;
+}
+
+.know-me{
+    color: #666666;
+}
+
+.my-class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.my-class i{
+    font-size: 50px;
+}
+.my-class img{
+    height: 50px;
+    width: 50px;
+}
+
+
