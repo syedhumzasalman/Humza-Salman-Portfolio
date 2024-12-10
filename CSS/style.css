@@ -5,7 +5,7 @@
 /* navigation bar */
 
 .my-icon{
-   font-size: rem;
+   color: white;
 }
 
 .navbar{
@@ -40,13 +40,24 @@ header{
     right: 50px;
 }
 
-.chat > button{
-    background-color: white;
+.chat a{
+    text-decoration: none;
+    background-color: white !important;
 }
+
 .chat > span{
     color: rgb(255, 255, 255);
     background-color: #7843e9;
 }
+.chat button{
+    background-color: white !important;
+}
+
+.chat a:hover{
+    background-color: white !important;
+    color: black;
+}
+
 /* chat box */
 
 

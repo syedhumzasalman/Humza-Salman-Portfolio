@@ -16,37 +16,32 @@
   --bs-color-primary: black;
 }
 
-body {
-  cursor: url(https://www.onyedika.xyz/static/media/arrowPoint.5b3f3b5c07736388f143.svg) 15 15, move;
-  height: 100%;
-  width: 100%;
-  background-color: white;
-}
+
 
 /* Navbar Start */
 
 
 .navbar {
+  z-index: 100000;
   position: sticky;
   top: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  height: 10vh;
   width: 100%;
   color: black;
   display: flex !important;
   justify-content: center !important;
-  align-items: center;
+  align-items: center !important;
   flex-wrap: wrap;
+
 }
 
 .navbar h3 {
   font-size: 2rem !important;
   font-weight: bold !important;
-  margin-top: .8rem !important;
 }
 
-.navbarlist {
-  margin-top: 1.5rem;
-}
+
 
 
 .navbarlist ul {
@@ -54,6 +49,7 @@ body {
   display: flex;
   gap: 30px;
   font-size: 1.3rem;
+  margin-top: .8rem;
 }
 
 .navbarlist ul a {
@@ -236,9 +232,12 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .navbar{
+    height: 15vh
 
+  }
   .all-assignment {
-    font-size: 1.8rem !important;
+    font-size: 1.5rem !important;
   }
 }
 
