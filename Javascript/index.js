@@ -32,3 +32,19 @@ function renderNextLine() {
 
 // Start the animation
 renderNextLine();
+
+
+
+function showQuote() {
+  Swal.fire({
+    title: '',
+    text: "You can view this on mobile as well",
+    imageUrl: '/images/qr-code.png',
+    imageWidth: 500,
+    imageHeight: 350,
+    imageAlt: 'Qari Quote Image',
+    background: '#fefefe',
+    color: '#1a1a1a',
+    confirmButtonColor: '#3085d6'
+  });
+}

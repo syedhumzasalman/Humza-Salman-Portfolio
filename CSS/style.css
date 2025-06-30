@@ -147,9 +147,28 @@ header{
 }
 
 #textDisplay {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
   font-family: 'Courier New', monospace;
-  border-right: 2px solid #007bff;
-  white-space: nowrap;
-  overflow: hidden;
+  padding-right: 5px;
+  width: 100%;
+  max-width: 100%;
+  white-space: normal; /* ✅ allow wrapping */
+  overflow: visible;   /* ✅ allow full height */
+  word-wrap: break-word;
+  text-align: center;
+}
+
+/* Responsive font resizing */
+@media (max-width: 768px) {
+  #textDisplay {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #textDisplay {
+    font-size: 1.2rem;
+  }
 }
