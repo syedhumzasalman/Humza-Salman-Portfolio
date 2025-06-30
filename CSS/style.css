@@ -146,4 +146,10 @@ header{
     width: 50px;
 }
 
-
+#textDisplay {
+  font-size: 1.8rem;
+  font-family: 'Courier New', monospace;
+  border-right: 2px solid #007bff;
+  white-space: nowrap;
+  overflow: hidden;
+}
