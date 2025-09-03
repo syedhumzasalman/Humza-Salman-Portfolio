@@ -1,5 +1,12 @@
 const products = [
   {
+    img: "/images/reactecommerce.png",
+    category: "React",
+    name: "Shopfinity - E-Commerce Website",
+    description: "A modern and fully responsive e-commerce platform built with React, featuring product browsing, category filtering, and a seamless shopping experience.",
+    link: "https://shopfinity-online.netlify.app/",
+  },
+  {
     img: "/images/namaz-tracker.png",
     category: "JavaScript",
     name: "Namaz Tracking App",
@@ -7,11 +14,25 @@ const products = [
     link: "https://namaz-tracker.netlify.app/",
   },
   {
+    img: "/images/reactgithubapi.png",
+    category: "React",
+    name: "GitHub API",
+    description: "A React app that integrates with the GitHub API to fetch and display user profiles, including repositories, followers, and other details in a clean UI",
+    link: "https://github-api-integration-react.netlify.app/",
+  },
+  {
     img: "/images/todo.png",
     category: "JavaScript",
     name: "ToDo Web App",
     description: `A simple and efficient ToDo web app where users can add, update, and delete tasks. Built using JavaScript and Firebase, it offers real-time data storage, user authentication, and a clean interface to help users stay organized and productive.`,
     link: "https://fire-base-todolist.netlify.app/",
+  },
+  {
+    img: "/images/reacttodoapp.png",
+    category: "React",
+    name: "React To-Do App",
+    description: "A simple yet efficient task management app built with React, allowing users to add, edit, and delete tasks with a clean and responsive interface.",
+    link: "https://myreact-todo-web-app.netlify.app/",
   },
   {
     img: "/images/student portal.png",
@@ -170,115 +191,95 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 
 
-const btn = ["HTML & CSS", "JavaScript",];
+const btn = ["HTML & CSS", "JavaScript", "React"];
 
 let BtnDisplay = document.querySelector("#BtnDisplay");
 let cardDisplay = document.querySelector("#cardDisplay");
 
+// Buttons render
 btn.map((item, index) => {
-
-  // console.log(item);
-  BtnDisplay.innerHTML += `<button class="btn btn-primary" onclick="btnCick(${index})"> ${item} </button>`;
+  BtnDisplay.innerHTML += `
+    <button class="btn btn-outline-primary me-2 mb-2" onclick="btnClick(${index})">
+      ${item}
+    </button>`;
 });
 
+// Card rendering
 function displayCards(call) {
   cardDisplay.innerHTML = "";
 
   call.map((pro) => {
     cardDisplay.innerHTML += `
-<div class="col-md-4 mb-4">
-  <div class="card h-100 border-0 shadow-sm overflow-hidden" style="
-    border-radius: 12px;
-    transition: all 0.3s ease;
-  ">
-    <!-- Image with hover zoom -->
-    <div class="overflow-hidden" style="height: 160px;">
-      <img src="${pro.img}" class="w-100 h-100 object-fit-cover card-img-top" alt="${pro.name}" 
-           style="transition: transform 0.5s ease;">
-    </div>
-    
-    <!-- Card Body -->
-    <div class="card-body p-3">
-      <!-- Category ribbon -->
-      <div class="d-flex justify-content-between align-items-start mb-2">
-        <span class="badge rounded-pill py-2 px-3" style="
-          background-color: #f0f7ff;
-          color: #3a86ff;
-          font-size: 0.7rem;
-          font-weight: 600;
-        ">
-          ${pro.category}
-        </span>
-        <i class="bi bi-box-arrow-up-right text-muted"></i>
-      </div>
-      
-      <!-- Title -->
-      <h5 class="card-title fw-bold mb-2" style="font-size: 1rem;">${pro.name}</h5>
-      
-      <!-- Description (truncated) -->
-      <p class="card-text text-muted mb-4" style="
-        font-size: 0.8rem;
-        line-height: 1.4;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-      ">
-        ${pro.description}
-      </p>
-      
-      <!-- Footer with button -->
-      <div class="d-flex justify-content-between align-items-center">
-        <div class="d-flex gap-1">
-          <span class="badge bg-light text-dark border" style="font-size: 0.6rem;">${pro.category}</span>
-          <span class="badge bg-light text-dark border" style="font-size: 0.6rem;"></span>
-        </div>
-        <a href="${pro.link}" target="_blank" class="btn btn-sm btn-primary py-1 px-3" style="
-          font-size: 0.75rem;
-          border-radius: 20px;
-        ">
-          View Project
-        </a>
-      </div>
-    </div>
-    
-    <!-- Hover overlay -->
-    <div class="position-absolute top-0 start-0 w-100 h-100 bg-primary bg-opacity-10" 
-         style="opacity: 0; transition: opacity 0.3s ease; pointer-events: none;"></div>
-  </div>
-</div>
-`;
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow-sm project-card">
+          
+          <!-- Image -->
+          <div class="overflow-hidden" style="height: 180px; border-top-left-radius: 12px; border-top-right-radius: 12px;">
+            <img src="${pro.img}" class="w-100 h-100 object-fit-cover card-img-top" alt="${pro.name}">
+          </div>
 
-    // Add hover effects
-    const style = document.createElement('style');
-    style.textContent = `
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
-}
-.card:hover img {
-  transform: scale(1.05);
-}
-.card:hover .bg-opacity-10 {
-  opacity: 1 !important;
-}
-`;
-    document.head.appendChild(style);
+          <!-- Body -->
+          <div class="card-body p-3 d-flex flex-column">
+            <span class="badge bg-light text-primary fw-semibold mb-2" style="font-size: 0.75rem;">
+              ${pro.category}
+            </span>
+
+            <h5 class="card-title fw-bold mb-2" style="font-size: 1.05rem;">${pro.name}</h5>
+
+            <p class="card-text text-muted flex-grow-1" style="
+              font-size: 0.85rem;
+              line-height: 1.4;
+              display: -webkit-box;
+              -webkit-line-clamp: 3;
+              -webkit-box-orient: vertical;
+              overflow: hidden;">
+              ${pro.description}
+            </p>
+
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <a href="${pro.link}" target="_blank" class="btn btn-sm btn-primary px-3" style="border-radius: 20px;">
+                View Project
+              </a>
+              <i class="bi bi-box-arrow-up-right text-muted"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
   });
 }
 
+// Default display
 function allCategory() {
   displayCards(products);
 }
 
-function btnCick(index) {
-  //  console.log(btn[index]);
-
-  let filterPro = products.filter((item) => {
-    // console.log(item.category);
-    return item.category === btn[index];
-  });
-  //  console.log(filterPro);
-
+// Filtered display
+function btnClick(index) {
+  if (btn[index] === "All") {
+    displayCards(products);
+    return;
+  }
+  let filterPro = products.filter((item) => item.category === btn[index]);
   displayCards(filterPro);
 }
+
+// styles
+const style = document.createElement("style");
+style.textContent = `
+.project-card {
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+.project-card img {
+  transition: transform 0.4s ease;
+}
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12) !important;
+}
+.project-card:hover img {
+  transform: scale(1.08);
+}
+`;
+document.head.appendChild(style);
