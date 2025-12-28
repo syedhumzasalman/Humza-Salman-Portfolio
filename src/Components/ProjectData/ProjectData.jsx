@@ -31,7 +31,7 @@ const projectsData = [
     {
         image: pitchcraft,
         tech: ["React"],
-        title: "Shopfinity - E-Commerce Website",
+        title: "PitchCraft",
         description: `PitchCraft is an AI-powered platform developed during the SMIT (Saylani Mass IT Training) Hackathon. Every student or founder has an idea 💡 but the challenge is — how to create a pitch, write taglines, or explain it to investors? PitchCraft is your personal AI startup partner that helps you create professional startup pitches instantly!`,
         live: "https://smit-pitchcraft.netlify.app/",
         github: "https://github.com/syedhumzasalman/Smit-Hackathon"
