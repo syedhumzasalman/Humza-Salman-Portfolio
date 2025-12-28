@@ -7,7 +7,7 @@ import {
 import { motion } from "framer-motion";
 import Navbar from "../../Components/Navbar/Navbar";
 
-import jsImg from "../../assets/Javascript.png";
+import jsImg from "../../assets/jsimg.png";
 import Problemsolving from "../../assets/PROBLEM SOLVING.png";
 import smit from "../../assets/SMIT.png";
 import htmlcssjavascript from "../../assets/html,css,javascript.png";
