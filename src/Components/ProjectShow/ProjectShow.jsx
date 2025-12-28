@@ -378,7 +378,7 @@ const ProjectsSection = () => {
                 </div>
 
                 {/* Hide Scrollbar CSS */}
-                <style jsx>{`
+                {/* <style jsx>{`
                     .scrollbar-hide::-webkit-scrollbar {
                         display: none;
                     }
@@ -386,7 +386,7 @@ const ProjectsSection = () => {
                         -ms-overflow-style: none;
                         scrollbar-width: none;
                     }
-                `}</style>
+                `}</style> */}
             </section>
         </>
     );
