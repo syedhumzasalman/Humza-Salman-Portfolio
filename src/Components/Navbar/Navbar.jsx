@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaQrcode } from 'react-icons/fa';
 import Swal from 'sweetalert2';
+import qrcode from '../../assets/qr-code.png'
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +21,7 @@ const Navbar = () => {
         Swal.fire({
             title: '',
             text: "You can view this on mobile as well",
-            imageUrl: '/public/qr-code.png',
+            imageUrl: qrcode,
             imageWidth: 500,
             imageHeight: 350,
             imageAlt: 'Qari Quote Image',
