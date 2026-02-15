@@ -106,7 +106,7 @@ const ProjectsSection = () => {
                         {/* Left Arrow */}
                         <motion.button
                             onClick={() => scroll('left')}
-                            className={`absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-linear-to-r from-blue-600 to-purple-600 text-white p-4 rounded-full shadow-2xl transition-all ${!canScrollLeft ? 'opacity-0 pointer-events-none' : 'opacity-0 group-hover:opacity-100'
+                            className={`absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-20 bg-linear-to-r from-blue-600 to-purple-600 text-white p-3 md:p-4 rounded-full shadow-2xl transition-all ${!canScrollLeft ? 'opacity-30 pointer-events-none' : 'opacity-70 md:opacity-0 md:group-hover:opacity-100'
                                 }`}
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
@@ -262,7 +262,7 @@ const ProjectsSection = () => {
                         {/* Right Arrow */}
                         <motion.button
                             onClick={() => scroll('right')}
-                            className={`absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-linear-to-r from-purple-600 to-pink-600 text-white p-4 rounded-full shadow-2xl transition-all ${!canScrollRight ? 'opacity-0 pointer-events-none' : 'opacity-0 group-hover:opacity-100'
+                            className={`absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-20 bg-linear-to-r from-purple-600 to-pink-600 text-white p-3 md:p-4 rounded-full shadow-2xl transition-all ${!canScrollRight ? 'opacity-30 pointer-events-none' : 'opacity-70 md:opacity-0 md:group-hover:opacity-100'
                                 }`}
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
