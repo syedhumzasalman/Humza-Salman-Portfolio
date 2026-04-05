@@ -47,12 +47,13 @@ const Navbar = () => {
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex space-x-8">
-                        <button
+                        <Link
+                            to="/"
                             onClick={() => scrollToSection('home')}
                             className="text-white hover:text-blue-400 transition-colors duration-300 font-medium"
                         >
                             Home
-                        </button>
+                        </Link>
 
                         <button
                             onClick={() => scrollToSection('about')}
